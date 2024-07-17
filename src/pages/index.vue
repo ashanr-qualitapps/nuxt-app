@@ -1,16 +1,19 @@
 <template>
-  <div>
-    <h1>Nuxt.js Web Application</h1>
-    <CountryList />
-  </div>
-</template>
-
-<script>
-import { CountryList } from 'vue-shared-components';
-
-export default {
-  components: {
-    CountryList
+    <div>
+      <h1>Home Page</h1>
+      <nuxt-link to="/countries">Go to Country List</nuxt-link>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'HomePage'
+  };
+  </script>
+  
+  <style scoped>
+  h1 {
+    margin-bottom: 20px;
   }
-};
-</script>
+  </style>
+  
