@@ -6,7 +6,7 @@
   </template>
   
   <script>
-  import { CountryList } from 'vue-shared-components';
+import { CountryList } from '~/static/dist/my-library.es.js'; // Import the shared component
   
   export default {
     components: {
