@@ -7,9 +7,14 @@ export default defineNuxtConfig({
   srcDir: 'src/',
 
   build: {
-    transpile: ['vue-shared-components']
+    transpile: ['vue-shared-components'], // Added comma here
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
-
   alias: {
     '@': resolve(__dirname, './src'),
     '~~': resolve(__dirname, './src'),
@@ -24,7 +29,8 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/static/dist/style.css' // Add the library's CSS
+    '~/static/dist/style.css',
+    '@/assets/css/tailwind.css'
   ],
 
   app: {

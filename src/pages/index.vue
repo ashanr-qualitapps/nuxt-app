@@ -11,9 +11,20 @@ import { CountryList } from '~/static/dist/my-library.es.js'; // Import the shar
 
 export default {
   name: 'HomePage',
+  middleware: 'auth',
+  computed: {
+    user() {
+      return this.$store.getters['auth/getUser'];
+    },
+  },
   components: {
     CountryList
-  }
+  },
+  methods: {
+    logout() {
+      this.$store.dispatch('auth/logout');
+    },
+  },
 };
 </script>
 
