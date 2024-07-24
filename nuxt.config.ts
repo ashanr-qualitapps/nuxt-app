@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   srcDir: 'src/',
 
   build: {
-    transpile: ['vue-shared-components'], // Added comma here
+    transpile: ['vue-shared-components'],
     postcss: {
       plugins: {
         tailwindcss: {},
@@ -29,8 +29,8 @@ export default defineNuxtConfig({
   },
 
   css: [
+    '@/assets/css/tailwind.css',
     '~/static/dist/style.css',
-    '@/assets/css/tailwind.css'
   ],
 
   app: {
