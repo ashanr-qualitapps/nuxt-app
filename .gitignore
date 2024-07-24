@@ -10,6 +10,11 @@ android/
 www/
 .build/
 
+
+#nuxt
+.nuxt/*
+.output/*
+
 # Android
 *.apk
 *.ap_
