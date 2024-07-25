@@ -1,6 +1,8 @@
 import { resolve } from 'path';
 
 export default defineNuxtConfig({
+
+  buildModules: ['@nuxtjs/tailwindcss'],
   // Ensure SSR is enabled
   ssr: true,
 
