@@ -15,6 +15,7 @@ www/
 .nuxt/*
 .output/*
 .nuxt/
+.output/*
 
 # Android
 *.apk
