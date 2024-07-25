@@ -31,6 +31,7 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/tailwind.css',
     '~/static/dist/style.css',
+    '~/assets/css/tailwind.css',
   ],
 
   app: {
@@ -49,6 +50,16 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: '@import "~/assets/css/tailwind.css";'
+        },
+      },
+    },
   },
 
   compatibilityDate: '2024-07-17'
