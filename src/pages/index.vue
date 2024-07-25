@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Home Page</h1>
-    <nuxt-link to="/countries">Go to Country List</nuxt-link>
+  <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <h1 class="text-4xl font-bold mb-6">Home Page</h1>
+    <nuxt-link to="/countries" class="text-blue-500 hover:underline mb-4">Go to Country List</nuxt-link>
     <CountryList /> <!-- Use the shared component -->
   </div>
 </template>
@@ -29,7 +29,4 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  margin-bottom: 20px;
-}
 </style>
